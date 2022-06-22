@@ -17,7 +17,6 @@ const Navbar: FC = () => {
 
     return (
         <header className='header'>
-
             <nav className='navbar'>
 
                 <a href="/" className='logo'>
@@ -44,7 +43,6 @@ const Navbar: FC = () => {
                 </div>
 
             </nav>
-
         </header>
     )
 }

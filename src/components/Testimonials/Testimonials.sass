@@ -1,0 +1,54 @@
+.testimonials
+    width: 100%
+
+    .container
+        max-width: 1240px
+        margin: 100px auto
+
+        h2
+            font-size: 36px
+            text-align: center
+
+    .content
+        display: flex
+        flex-direction: row
+        gap: 25px
+        padding-top: 50px
+
+    .card
+        border: 1px solid #eee
+        border-radius: 8px
+        box-shadow: 0 3px 10px rgb(0,0,0,.2)
+        padding: 25px
+
+        p
+            color: #787878
+            font-size: 18px
+            margin: 12px
+
+        img
+            border-radius: 50px
+            margin-top: -50px
+
+        span
+            color: var(--primary-color)
+            font-size: 18px
+            font-weight: 700
+
+
+
+
+
+    
+@media screen and (max-width: 940px)
+    .container
+        width: 100%
+
+        .content
+            flex-wrap: wrap
+
+            .card
+                margin-bottom: 50px
+
+                img
+                    width: 70px
