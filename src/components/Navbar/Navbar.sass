@@ -8,7 +8,7 @@
     transition: .3s ease-in
     overflow: hidden
 
-.header .navbar
+.navbar
     display: flex
     justify-content: space-between
     align-items: center
@@ -17,23 +17,25 @@
     height: 100%
     padding: 0 1rem
 
-.header .nav-menu a 
-    color: white 
+    img
+        width: 250px
+        height: auto
 
-.header .navbar img
-    width: 250px
-    height: auto
 
-.header .nav-menu
+.nav-menu
     display: flex
 
-.header .nav-item
+    a
+        color: white
+
+.nav-item
     padding: 1rem
     font-weight: 500
 
-.header .nav-item a:hover
-    padding-bottom: 12px
-    border-bottom: 3px solid var(--secondary-color)
+    a:hover
+        padding-bottom: 12px
+        border-bottom: 3px solid var(--secondary-color)
+
 
 .humburger
     display: none
@@ -43,11 +45,8 @@
         max-width: 100%
         background-color: rgba(0,0,0,.9)
 
-    .header .navbar
+    .navbar
         max-width: 100%
-
-    .humburger
-        display: block
 
     .nav-menu
         position: fixed
@@ -67,5 +66,10 @@
     .nav-item
         margin: 1.5rem 0
 
-    .header .navbar img
-        width: 150px
+    .navbar
+        img
+            width: 150px
+    
+    .humburger
+        display: block
+        cursor: pointer
