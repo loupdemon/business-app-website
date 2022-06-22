@@ -1,0 +1,40 @@
+.demo
+    margin: 5rem auto
+    padding: 30px
+    width: 100%
+
+    .container
+        max-width: 1240px
+        margin: auto
+        display: flex
+        justify-content: space-between
+
+        .col-1
+            font-size: 18px
+
+            p:nth-child(2)
+                font-size: 36px
+                font-weight: 700
+                margin: 15px 0
+
+            p:nth-child(3)
+                margin-bottom: 15px
+
+        .col-2
+            padding-left: 30px
+
+
+
+@media screen and (max-width: 940px)
+    .demo
+
+        .container
+            max-width: 100%
+            flex-wrap: wrap
+            gap: 30px
+
+        iframe
+            width: 350px
+            height: auto
+
+        
