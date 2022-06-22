@@ -7,6 +7,7 @@ const user2 = require("../../images/user2.jpeg");
 const user3 = require("../../images/user3.jpeg");
 
 const Testimonials: FC = () => {
+    
     return (
         <div className='testimonials' id='testimonials'>
             <div className='container'>

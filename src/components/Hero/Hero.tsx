@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import './Hero.sass';
 
 const Hero: FC = () => {
+  
   return (
     <div className='hero'>
       <div className="content">
@@ -11,7 +12,7 @@ const Hero: FC = () => {
         <p>Becouse Money</p>
         <p>Doesn't come with instructions</p>
         <a href="/"><button className='button'>Free Consultation</button></a>
-        
+
       </div>
     </div>
   )

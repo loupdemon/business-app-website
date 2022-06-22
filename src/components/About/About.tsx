@@ -6,6 +6,7 @@ import './About.sass';
 const john = require('../../images/john-doe.png');
 
 const About: FC = () => {
+
     return (
         <div className='about' id='about'>
             <div className='container'>

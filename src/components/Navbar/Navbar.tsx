@@ -3,9 +3,9 @@ import './Navbar.sass';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-
-
 const Logo = require("../../images/logo.png");
+
+
 
 const Navbar: FC = () => {
 
@@ -13,6 +13,10 @@ const Navbar: FC = () => {
 
     const handleClick: React.MouseEventHandler<HTMLDivElement> = (): void => {
         setClick(!click);
+    }
+
+    const closeMenu: React.MouseEventHandler<HTMLAnchorElement> = (): void => {
+        setClick(false)
     }
 
     return (
@@ -25,16 +29,16 @@ const Navbar: FC = () => {
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <a href="">Home</a>
+                        <a href="/" onClick={closeMenu}>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a href="">About</a>
+                        <a href="#about" onClick={closeMenu}>About</a>
                     </li>
                     <li className='nav-item'>
-                        <a href="">Testimonials</a>
+                        <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
                     </li>
                     <li className='nav-item'>
-                        <a href="">Demo</a>
+                        <a href="#demo" onClick={closeMenu}>Demo</a>
                     </li>
                 </ul>
 
